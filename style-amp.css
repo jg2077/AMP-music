@@ -231,8 +231,11 @@ body {
   /* no se repite la imagen */
   background-position: center;
   /* centra la imagen */
-  max-width: 1510px;
-  margin: 10px;
+  margin-bottom: 10px;
+}
+
+.how-steps{
+  width: 100%;
 }
 
 .how-container p {
