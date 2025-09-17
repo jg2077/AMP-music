@@ -231,8 +231,11 @@ body {
   /* no se repite la imagen */
   background-position: center;
   /* centra la imagen */
-  max-width: 1510px;
-  margin: 10px;
+  margin-bottom: 10px;
+}
+
+.how-steps{
+  width: 100%;
 }
 
 .how-container p {
@@ -711,7 +714,7 @@ body {
 .seccion-nosotros h2 {
   text-align: center;
   font-size: 35px;
-  color: rgb(255, 0, 0);
+  color: rgb(255, 255, 255);
   background-color: black;
   margin: 10px;
   padding: 10px;
