@@ -1,0 +1,32 @@
+header {
+    nav {
+        background-color: rgb(228, 181, 119) !important;
+        /*letras en negro*/
+        color: black !important;
+        font-family: "Roboto Mono", monospace;
+        font-optical-sizing: auto;
+        font-weight: 250;
+        font-style: normal;
+    }
+
+    & hover {
+        color: white !important;
+    }
+
+    div {
+
+        .logo {
+            width: 70px;
+            /* ajustá el tamaño del logo*/
+            height: auto;
+
+        }
+        .carrito {
+            /*ajusta el tamaño del carrito*/
+            width: 30px;
+            height: auto;
+            cursor: pointer;
+        }
+
+    }
+}
