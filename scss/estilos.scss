@@ -1,12 +1,18 @@
 @import "./base/funcionalidades";
 @import "./base/generales";
-@import "./components/footer";
-@import "./components/header";
-@import "./components/ofertas-destacadas";
-@import "./components/carrusel-rosa";
-@import "./components/usados-luthier";
-@import "./components/accesorios";
-@import "./components/novedades-banner";
+@import "./base/media-query";
+
+@import "./layout/footer";
+@import "./layout/header";
+
+@import "./home/ofertas-destacadas";
+@import "./home/carrusel-rosa";
+@import "./home/usados-luthier";
+@import "./home/accesorios";
+@import "./home/novedades-banner";
+
+
+
 
 /*agregar h2 accecsorios*/
 /*estilos para h2 en generales?*/

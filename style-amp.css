@@ -223,7 +223,6 @@
 
 .how-container{
   background-image: url("./imagenes/how.jpg");
-  /************** ARRGELAR ESTO ***************/
   background-size: cover;
   /* imagen como fondo */
   background-repeat: no-repeat;

@@ -375,8 +375,8 @@ header div .carrito {
   height: 67%;
   display: block;
   margin: 0 auto;
-  cursor: pointer;
   max-height: 215px;
+  cursor: pointer;
 }
 
 /*agregar h2 accecsorios*/
