@@ -1,7 +1,3 @@
-@import "./base/funcionalidades";
-@import "./base/generales";
-@import "./base/media-query";
-
 @import "./layout/footer";
 @import "./layout/header";
 
@@ -10,15 +6,37 @@
 @import "./home/usados-luthier";
 @import "./home/novedades-banner";
 
+@import "./guitarras-bajos/guitarras";
+@import "./guitarras-bajos/bajos";
+
 @import "./custom-shop/custom-banner";
 @import "./custom-shop/how";
+@import "./custom-shop/carrusel-custom";
+@import "./custom-shop/favoritos";
+
+@import "./sobre-nosotros/seccion-nosotros";
+@import "./sobre-nosotros/grilla-ubi";
 
 @import "./accesorios/_accesorios-grid";
 
+@import "./base/funcionalidades";
+@import "./base/generales";
+@import "./base/media-query";
 
 
+/*rompe how entre 1000 y 800*/
+
+/*los carruseles cambian el color de letra por igual*/
+/*media query carrusel custom 760 no muestra textos*/
 
 /*agregar h2 accecsorios*/
 /*estilos para h2 en generales?*/
-/*separar por carpetas las paginas .scss*/
-/*ojo los partials con herencia media query rompe navbar*/
+
+/*grilla luthier usados p dentro del item*/
+/*achicar carrussel sin romper responsive*/
+
+/*aspect ratio en la imagen custom banner*/
+/*margin top banner custom*/
+/*arreglar margins en custom shop*/
+/*arreglar how container*/
+/*Como hago para que un padding no ocupe todo el ancho y solo los bordes*/
