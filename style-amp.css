@@ -153,27 +153,26 @@
 
 /********************* Custom section *************************/
 
-.banner-section {
+/* .banner-section {
   background-image: url("./imagenes/shop.png");
   background-size: cover;
   /* imagen como fondo */
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; */
   /* no se repite la imagen */
-  background-position: center;
+  /* background-position: center; */
   /* centra la imagen */
-}
 
-.banner-padre {
+/* .banner-padre {
   display: flex;
   flex-direction: column;
   /*para que los elementos se muestren en una sola columna*/
-  align-items: center;
+  /* align-items: center;
   /*centra los elementos*/
-  border: 2px rgb(0, 0, 0) solid;
+  /* border: 2px rgb(0, 0, 0) solid; */ 
   /*borde rojo*/
-}
 
-.banner-section h1 {
+
+/* .banner-section h1 {
   text-align: center;
   color: rgb(255, 255, 255);
   padding: 10px;
@@ -183,9 +182,9 @@
   font-optical-sizing: auto;
   font-weight: 250;
   font-style: normal;
-}
+} */
 
-.banner-section p {
+/* .banner-section p {
   text-align: center;
   font-size: 20px;
   color: rgb(255, 255, 255);
@@ -196,8 +195,8 @@
   padding: 10px;
   margin: 10px;
   background-color: rgba(0, 0, 0, 0.488);
-}
-
+} */
+/* 
 .banner-img {
   width: 100%;
   height: 67%;
@@ -205,10 +204,10 @@
   margin: 0 auto;
   cursor: pointer;
   max-height: 215px;
-}
+} */
 
 /********************* How section *************************/
-.how-section h2 {
+/* .how-section h2 {
   text-align: center;
   font-size: 35px;
   color: white;
@@ -219,24 +218,24 @@
   font-optical-sizing: auto;
   font-weight: 250;
   font-style: normal;
-}
+} */
 
-.how-container{
+/* .how-container{
   background-image: url("./imagenes/how.jpg");
   background-size: cover;
   /* imagen como fondo */
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; */
   /* no se repite la imagen */
-  background-position: center;
+  /* background-position: center; */
   /* centra la imagen */
-  margin-bottom: 10px;
-}
+  /* margin-bottom: 10px;
+} */ 
 
-.how-steps{
+/* .how-steps{
   width: 100%;
-}
+} */
 
-.how-container p {
+/* .how-container p {
   text-align: center;
   font-size: 20px;
   color: rgb(255, 255, 255);
@@ -247,36 +246,35 @@
   padding: 10px;
   margin: 10px;
   background-color: rgba(0, 0, 0, 0.488);
-}
+} */
 
-.white-background {
+/* .white-background {
   background-color: rgba(255, 255, 255, 0.537);
-}
+} */
 
-.favs-container img{
+/* .favs-container img{
    width: 100%;      /* La imagen ocupa todo el ancho de la columna */
-  margin-bottom: 10px; /* Separación entre imágenes */
-  margin-top: 10px;
+  /* margin-bottom: 10px; /* Separación entre imágenes */
+  /* margin-top: 10px;
   border-radius: 8px;  /* Bordes redondeados opcional */
-  object-fit: cover;   /* Ajusta la imagen dentro del contenedor */
-}
+  /* object-fit: cover;   Ajusta la imagen dentro del contenedor */
 
-@media (max-width: 768px) {
+
+/* @media (max-width: 768px) {
   .favs-container .row {
     display: flex;
     flex-direction: column; /* Apilar columnas verticalmente */
-    align-items: center;    /* Centrar contenido horizontalmente */
-  }
+    /* align-items: center;    Centrar contenido horizontalmente
+  } */
 
-  .favs-container .col-1 {
+  /* .favs-container .col-1 {
     display: none; /* Ocultar las columnas vacías */
-  }
+  
 
-  .columna-imagenes {
+  /* .columna-imagenes {
     width: 100%;  /* Cada columna ocupa todo el ancho */
-    margin-bottom: 20px;
-  }
-}
+    /* margin-bottom: 20px; */
+  
 
 
 
@@ -344,7 +342,7 @@
 /* .footer-left p,
 .footer-text p {
   margin: 0 !important;
-} */ */
+} */ 
 
 /*********************** Accesorios ************************/
 

@@ -1,0 +1,16 @@
+@media (max-width: 768px) { /*custom-shop how*/
+  .favs-container .row {
+    display: flex;
+    flex-direction: column; /* Apilar columnas verticalmente */
+    align-items: center;    /* Centrar contenido horizontalmente */
+  }
+
+  .favs-container .col-1 {
+    display: none; /* Ocultar las columnas vacías */
+  }
+
+  .columna-imagenes {
+    width: 100%;  /* Cada columna ocupa todo el ancho */
+    margin-bottom: 20px;
+  }
+}
