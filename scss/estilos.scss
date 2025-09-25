@@ -1,6 +1,14 @@
 @import "./base/funcionalidades";
 @import "./base/generales";
-@import "./base/mediaquery";
 @import "./components/footer";
 @import "./components/header";
 @import "./components/ofertas-destacadas";
+@import "./components/carrusel-rosa";
+@import "./components/usados-luthier";
+@import "./components/accesorios";
+@import "./components/novedades-banner";
+
+/*agregar h2 accecsorios*/
+/*estilos para h2 en generales?*/
+/*separar por carpetas las paginas .scss*/
+/*ojo los partials con herencia media query rompe navbar*/

@@ -1,17 +1,387 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 3 | @import "./base/mediaquery";
- *   |         ^^^^^^^^^^^^^^^^^^^
- *   '
- *   scss\estilos.scss 3:9  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 3 \2502  @import \"./base/mediaquery\";\d\a   \2502          ^^^^^^^^^^^^^^^^^^^\a   \2575 \a   scss\\estilos.scss 3:9  root stylesheet";
+@charset "UTF-8";
+/*variables listas mixin extend*/
+/***fuentes**/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+body {
+  background-image: url("../imagenes/fondo.jpg");
+  background-size: cover;
+  /* imagen como fondo */
+  background-repeat: no-repeat;
+  /* no se repite la imagen */
+  background-position: center;
+  /* centra la imagen */
+}
+
+h1 {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 250;
+  font-style: normal;
+}
+
+h2 {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 250;
+  font-style: normal;
+}
+
+h3 {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 250;
+  font-style: normal;
+}
+
+h5 {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 250;
+  font-style: normal;
+}
+
+p {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 250;
+  font-style: normal;
+}
+
+a {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 250;
+  font-style: normal;
+}
+
+.pie {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  width: 100%;
+  min-height: 37px;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  /* izquierda - centro - derecha */
+  align-items: center;
+  /* centra verticalmente */
+}
+
+.footer-left {
+  justify-self: start;
+  /* alinea el bloque a la izquierda */
+  font-size: 15px;
+  padding: 10px;
+  border: 2px solid white;
+  border-radius: 10px;
+  /* esquinas redondeadas */
+}
+
+.footer-text {
+  justify-self: center;
+  /* centra el texto en su columna */
+  font-size: 15px;
+  padding: 10px;
+  border: 2px solid white;
+  border-radius: 10px;
+  /* esquinas redondeadas */
+}
+
+.redes_sociales-container {
+  justify-self: end;
+  /* pega el bloque de redes a la derecha */
+  display: flex;
+  gap: 10px;
+  /* espacio entre iconos */
+}
+
+.redes-sociales-container a {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  /*los iconos se modifican como texto*/
+}
+
+.redes_sociales-container a:hover {
+  color: rgb(228, 181, 119);
+}
+
+.footer-left p,
+.footer-text p {
+  margin: 0 !important;
+}
+
+header .bg-body-tertiary {
+  background-color: rgb(228, 181, 119) !important;
+  /*letras en negro*/
+  color: black !important;
+  font-weight: 400;
+}
+header .nav-link:hover {
+  color: white !important;
+}
+header div .logo {
+  width: 70px;
+  /* ajustá el tamaño del logo*/
+  height: auto;
+}
+header div .carrito {
+  /*ajusta el tamaño del carrito*/
+  width: 30px;
+  height: auto;
+  cursor: pointer;
+}
+
+.contenedor-ofertas {
+  display: flex;
+  /*para que los elementos se muestren en una sola linea*/
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  /*para que los elementos se ajusten al ancho de la pantalla*/
+}
+
+.ofertas-destacados .contenedor-ofertas div {
+  border: 1px solid rgb(0, 0, 0);
+  /* borde rojo*/
+  width: 300px;
+  height: 325px;
+  margin: 15px;
+  text-align: center;
+  background-image: url("../imagenes/card-fondo.jpg");
+  background-size: cover;
+  /* imagen como fondo */
+  background-repeat: no-repeat;
+  /* no se repite la imagen */
+  background-position: center;
+  /* centra la imagen */
+}
+
+.ofertas-destacados h2 {
+  text-align: center;
+  font-size: 35px;
+  color: white;
+  background-color: black;
+  margin: 10px;
+  padding: 10px;
+}
+
+.ofertas-destacados h3 {
+  margin: 5px;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+}
+
+.ofertas-destacados div img {
+  width: 250px;
+  height: 250px;
+  object-fit: contain;
+  /* ajusta el tamaño */
+}
+
+.ofertas-destacados div a {
+  text-decoration: none;
+  /*quita el subrayado*/
+  color: rgb(255, 255, 255);
+  background-color: black;
+  padding: 5px;
+}
+
+.ofertas-destacados div a:hover {
+  background-color: rgb(255, 255, 255);
+  color: black;
+  /*cambia el color del boton al pasar el mouse*/
+}
+
+.titulo-rosa {
+  text-align: center;
+  font-size: 35px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(255, 0, 208);
+  margin: 10px;
+  padding: 10px;
+}
+
+.pink-background {
+  background-color: rgba(255, 0, 208, 0.537);
+}
+
+.carousel-inner h5 {
+  color: rgb(255, 255, 255) !important;
+}
+
+.carousel-inner p {
+  color: rgb(255, 255, 255) !important;
+}
+
+.carousel-caption {
+  position: absolute;
+  bottom: 20px;
+  /* distancia desde el borde inferior */
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  width: 100%;
+  color: white;
+  /* asegurate de que el texto sea visible sobre la imagen */
+  background-color: rgba(0, 0, 0, 0.232);
+  /* opcional: fondo semitransparente para mejor legibilidad */
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.usados-luthier-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* 2 columnas, de 1fr. 2 columnas iguales */
+  justify-items: center;
+  /* centra los contenidos en la celda */
+  align-items: center;
+  margin-top: 20px;
+  gap: 20px;
+  /*espacio entre los elementos*/
+  padding: 20px;
+}
+
+.usados-luthier-padre h3 {
+  text-align: center;
+  font-size: 35px;
+  color: white;
+  background-color: black;
+  margin: 10px;
+  padding: 10px;
+}
+
+.usados-luthier-padre p {
+  text-align: center;
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  margin: 10px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.421);
+}
+
+.usados,
+.luthier {
+  /*background: #f5f5f5; /* opcional, para ver las cajas */
+  /*padding: 15px;*/
+  border-radius: 10px;
+  /* esquinas redondeadas */
+  text-align: center;
+  /* centra el texto e imagen */
+  width: 100%;
+}
+
+.usados-item,
+.luthier-item {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.grid-accesorios {
+  margin: 5px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 250px;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.grid-item {
+  background-color: rgba(0, 0, 0, 0.589);
+}
+
+.grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  cursor: pointer;
+  /* ajusta el tamaño de la imagen */
+}
+
+.img4 {
+  grid-column: span 2;
+  /* ocupa 2 columnas */
+}
+
+.img6 {
+  grid-row: span 2;
+  /* ocupa 2 columnas */
+}
+
+.img8 {
+  grid-row: span 2;
+  /* ocupa 2 columnas */
+}
+
+.grid-item {
+  position: relative;
+  /*un elemento absoluto no puede salir*/
+}
+
+.grid-item h3 {
+  position: absolute;
+  /*posiciona el elemento respecto a su contenedor*/
+  bottom: 0;
+  /*lo posiciona abajo*/
+  color: rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0.648);
+  padding: 10px;
+}
+
+.novedades-section {
+  /*background-color: white;*/
+  background-image: url("../imagenes/novedades-fondo.jpg");
+  background-size: cover;
+  /* imagen como fondo */
+  background-repeat: no-repeat;
+  /* no se repite la imagen */
+  background-position: center;
+  /* centra la imagen */
+}
+
+.novedades-padre {
+  display: flex;
+  flex-direction: column;
+  /*para que los elementos se muestren en una sola columna*/
+  align-items: center;
+  /*centra los elementos*/
+  border: 2px rgb(0, 0, 0) solid;
+  /*borde rojo*/
+}
+
+.novedades-section h1 {
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.novedades-section p {
+  text-align: center;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+}
+
+.novedades-img {
+  width: 100%;
+  height: 67%;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+  max-height: 215px;
+}
+
+/*agregar h2 accecsorios*/
+/*estilos para h2 en generales?*/
+/*separar por carpetas las paginas .scss*/
+/*ojo los partials con herencia media query rompe navbar*/
+
+/*# sourceMappingURL=estilos.css.map */

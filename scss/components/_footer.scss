@@ -1,64 +1,55 @@
 .pie {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    width: 100%;
-    min-height: 37px;
-    display: grid;
-    grid-template-columns: auto 1fr auto;
-    /* izquierda - centro - derecha */
-    align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  width: 100%;
+  min-height: 37px;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  /* izquierda - centro - derecha */
+  align-items: center;
+  /* centra verticalmente */
+}
 
-    /* centra verticalmente */
-    div {
-        p {
-            justify-self: start;
-            /* alinea el bloque a la izquierda */
-            font-size: 15px;
-            padding: 10px;
-            border: 2px solid white;
-            border-radius: 10px;
-            /* esquinas redondeadas */
-            font-family: "Roboto Mono", monospace;
-            font-optical-sizing: auto;
-            font-weight: 250;
-            font-style: normal;
-            margin: 0 !important;
-        }
-    }
+.footer-left {
+  justify-self: start;
+  /* alinea el bloque a la izquierda */
+  font-size: 15px;
+  padding: 10px;
+  border: 2px solid white;
+  border-radius: 10px;
+  /* esquinas redondeadas */
+}
 
-    div {
-        p {
-            justify-self: center;
-            /* centra el texto en su columna */
-            font-size: 15px;
-            padding: 10px;
-            border: 2px solid white;
-            border-radius: 10px;
-            /* esquinas redondeadas */
-            font-family: "Roboto Mono", monospace;
-            font-optical-sizing: auto;
-            font-weight: 250;
-            font-style: normal;
-            margin: 0 !important;
-        }
-    }
+.footer-text {
+  justify-self: center;
+  /* centra el texto en su columna */
+  font-size: 15px;
+  padding: 10px;
+  border: 2px solid white;
+  border-radius: 10px;
+  /* esquinas redondeadas */
+}
 
-    div {
-        justify-self: end;
-        /* pega el bloque de redes a la derecha */
-        display: flex;
-        gap: 10px;
+.redes_sociales-container {
+  justify-self: end;
+  /* pega el bloque de redes a la derecha */
+  display: flex;
+  gap: 10px;
+  /* espacio entre iconos */
+}
 
-        /* espacio entre iconos */
-        a {
-            color: rgb(255, 255, 255);
-            font-size: 20px;
+.redes-sociales-container a {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  /*los iconos se modifican como texto*/
+}
 
-            /*los iconos se modifican como texto*/
-            &:hover {
-                color: rgb(228, 181, 119);
-            }
-        }
-    }
+.redes_sociales-container a:hover {
+  color: rgb(228, 181, 119);
+}
+
+.footer-left p,
+.footer-text p {
+  margin: 0 !important;
 }

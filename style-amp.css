@@ -1,20 +1,20 @@
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
+} */
 
 
 /******************* Header *********************/
 
-.bg-body-tertiary {
+/* .bg-body-tertiary {
   /*cambio de color fondo*/
-  background-color: rgb(228, 181, 119) !important;
-}
+  /* background-color: rgb(228, 181, 119) !important;
+} */ 
 
-.navbar-nav .nav-link {
+/* .navbar-nav .nav-link {
   /*letras en negro*/
-  color: black !important;
+  /* color: black !important;
   font-family: "Roboto Mono", monospace;
   font-optical-sizing: auto;
   font-weight: 250;
@@ -23,36 +23,36 @@
 
 .nav-link:hover {
   color: white !important;
-}
+} */ 
 
-.logo {
+/* .logo {
   width: 70px;
   /* ajustá el tamaño del logo*/
-  height: auto;
-}
+  /* height: auto;
+} */ 
 
-.carrito {
+/* .carrito {
   /*ajusta el tamaño del carrito*/
-  width: 30px;
+  /* width: 30px;
   height: auto;
   cursor: pointer;
-}
+} */ 
 
 /********************* body **************************/
 
-body {
+/* body {
   background-image: url("./imagenes/fondo.jpg");
   background-size: cover;
   /* imagen como fondo */
-  background-repeat: no-repeat;
-  /* no se repite la imagen */
+  /* background-repeat: no-repeat;
+  no se repite la imagen
   background-position: center;
   /* centra la imagen */
-}
+
 
 /************carrusel**************************/
 
-.titulo-rosa {
+/* .titulo-rosa {
   text-align: center;
   font-size: 35px;
   color: rgb(255, 255, 255);
@@ -89,52 +89,50 @@ body {
   position: absolute;
   bottom: 20px;
   /* distancia desde el borde inferior */
-  left: 50%;
+  /* left: 50%;
   transform: translateX(-50%);
   text-align: center;
   width: 100%;
   color: white;
   /* asegurate de que el texto sea visible sobre la imagen */
-  background-color: rgba(0, 0, 0, 0.232);
+  /* background-color: rgba(0, 0, 0, 0.232);
   /* opcional: fondo semitransparente para mejor legibilidad */
-  padding: 10px;
+  /* padding: 10px;
   border-radius: 5px;
-}
+} */ 
 
 /********************* Novedades section *************************/
 
-.novedades-section {
+/* .novedades-section {
   /*background-color: white;*/
-  background-image: url("./imagenes/novedades-fondo.jpg");
-  /************** ARRGELAR ESTO ***************/
+  /* background-image: url("./imagenes/novedades-fondo.jpg");
   background-size: cover;
   /* imagen como fondo */
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat;
   /* no se repite la imagen */
-  background-position: center;
+  /* background-position: center; */ 
   /* centra la imagen */
-}
+/* }
 
 .novedades-padre {
   display: flex;
   flex-direction: column;
   /*para que los elementos se muestren en una sola columna*/
-  align-items: center;
+  /* align-items: center;
   /*centra los elementos*/
-  border: 2px rgb(0, 0, 0) solid;
+  /* border: 2px rgb(0, 0, 0) solid;
   /*borde rojo*/
-}
 
-.novedades-section h1 {
+/* .novedades-section h1 {
   text-align: center;
   color: rgb(255, 255, 255);
   font-family: "Roboto Mono", monospace;
   font-optical-sizing: auto;
   font-weight: 250;
   font-style: normal;
-}
+} */
 
-.novedades-section p {
+/* .novedades-section p {
   text-align: center;
   font-size: 20px;
   color: rgb(255, 255, 255);
@@ -142,16 +140,16 @@ body {
   font-optical-sizing: auto;
   font-weight: 250;
   font-style: normal;
-}
+} */
 
-.novedades-img {
+/* .novedades-img {
   width: 100%;
   height: 67%;
   display: block;
   margin: 0 auto;
   cursor: pointer;
   max-height: 215px;
-}
+} */ 
 
 /********************* Custom section *************************/
 
@@ -285,7 +283,7 @@ body {
 
 /***************** footer **************************************/
 
-.pie {
+/* .pie {
   background-color: #333;
   color: #fff;
   padding: 20px;
@@ -294,64 +292,64 @@ body {
   display: grid;
   grid-template-columns: auto 1fr auto;
   /* izquierda - centro - derecha */
-  align-items: center;
+  /* align-items: center; */
   /* centra verticalmente */
-}
 
-.footer-left {
+
+/* .footer-left {
   justify-self: start;
   /* alinea el bloque a la izquierda */
-  font-size: 15px;
+  /* font-size: 15px;
   padding: 10px;
   border: 2px solid white;
   border-radius: 10px;
   /* esquinas redondeadas */
-  font-family: "Roboto Mono", monospace;
+  /* font-family: "Roboto Mono", monospace;
   font-optical-sizing: auto;
   font-weight: 250;
   font-style: normal;
-}
+} */ 
 
-.footer-text {
+/* .footer-text {
   justify-self: center;
   /* centra el texto en su columna */
-  font-size: 15px;
+  /* font-size: 15px;
   padding: 10px;
   border: 2px solid white;
   border-radius: 10px;
   /* esquinas redondeadas */
-  font-family: "Roboto Mono", monospace;
+  /* font-family: "Roboto Mono", monospace;
   font-optical-sizing: auto;
   font-weight: 250;
   font-style: normal;
-}
+} */ 
 
-.redes_sociales-container {
+/* .redes_sociales-container {
   justify-self: end;
   /* pega el bloque de redes a la derecha */
-  display: flex;
-  gap: 10px;
+  /* display: flex;
+  gap: 10px; */
   /* espacio entre iconos */
-}
+/* } */ 
 
-.redes-sociales-container a {
+/* .redes-sociales-container a {
   color: rgb(255, 255, 255);
   font-size: 20px;
   /*los iconos se modifican como texto*/
-}
+ 
 
-.redes_sociales-container a:hover {
+/* .redes_sociales-container a:hover {
   color: rgb(228, 181, 119);
-}
+} */
 
-.footer-left p,
+/* .footer-left p,
 .footer-text p {
   margin: 0 !important;
-}
+} */ */
 
 /*********************** Accesorios ************************/
 
-.grid-accesorios {
+/* .grid-accesorios {
   margin: 5px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -373,67 +371,67 @@ body {
   height: 100%;
   object-fit: contain;
   cursor: pointer;
-  /* ajusta el tamaño de la imagen */
+  ajusta el tamaño de la imagen
 }
 
 .img4 {
   grid-column: span 2;
   /* ocupa 2 columnas */
-}
+ /*/
 
-.img6 {
+/* .img6 {
   grid-row: span 2;
   /* ocupa 2 columnas */
-}
+/* } */ 
 
-.img8 {
+/* .img8 {
   grid-row: span 2;
-  /* ocupa 2 columnas */
-}
+  ocupa 2 columnas
+} */
 
-.grid-item {
+/* .grid-item {
   position: relative;
-  /*un elemento absoluto no puede salir*/
-}
+  un elemento absoluto no puede salir
+} */
 
-.grid-item h3 {
+/* .grid-item h3 {
   position: absolute;
   /*posiciona el elemento respecto a su contenedor*/
-  bottom: 0;
+  /* bottom: 0;
   /*lo posiciona abajo*/
-  color: rgb(255, 255, 255);
+  /* color: rgb(255, 255, 255);
   background-color: rgba(0, 0, 0, 0.648);
   padding: 10px;
-}
+} */ 
 
 /********************* Ofertas Destacados *******************/
 
-.contenedor-ofertas {
-  display: flex;
+/* .contenedor-ofertas { */
+  /* display: flex; */
   /*para que los elementos se muestren en una sola linea*/
-  flex-direction: row;
+  /* flex-direction: row;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  /*para que los elementos se ajusten al ancho de la pantalla*/
-}
-.ofertas-destacados .contenedor-ofertas div {
+  para que los elementos se ajusten al ancho de la pantalla */
+
+/* .ofertas-destacados .contenedor-ofertas div {
   border: 1px solid rgb(0, 0, 0);
   /* borde rojo*/
-  width: 300px;
+  /* width: 300px;
   height: 325px;
   margin: 15px;
   text-align: center;
   background-image: url("./imagenes/card-fondo.jpg");
   background-size: cover;
   /* imagen como fondo */
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat;
   /* no se repite la imagen */
-  background-position: center;
+  /* background-position: center;
   /* centra la imagen */
-}
 
-.ofertas-destacados h2 {
+
+/* .ofertas-destacados h2 {
   text-align: center;
   font-size: 35px;
   color: white;
@@ -444,9 +442,9 @@ body {
   font-optical-sizing: auto;
   font-weight: 250;
   font-style: normal;
-}
+} */
 
-.ofertas-destacados h3 {
+/* .ofertas-destacados h3 {
   margin: 5px;
   color: rgb(255, 255, 255);
   font-size: 20px;
@@ -454,32 +452,32 @@ body {
   font-optical-sizing: auto;
   font-weight: 250;
   font-style: normal;
-}
+} */
 
-.ofertas-destacados div img {
+/* .ofertas-destacados div img {
   width: 250px;
   height: 250px;
   object-fit: contain;
   /* ajusta el tamaño */
-}
+ 
 
-.ofertas-destacados div a {
+/* .ofertas-destacados div a {
   text-decoration: none;
   /*quita el subrayado*/
-  color: rgb(255, 255, 255);
+  /* color: rgb(255, 255, 255);
   background-color: black;
   padding: 5px;
   font-family: "Roboto Mono", monospace;
   font-optical-sizing: auto;
   font-weight: 250;
   font-style: normal;
-}
+} */ 
 
-.ofertas-destacados div a:hover {
+/* .ofertas-destacados div a:hover {
   background-color: rgb(255, 255, 255);
   color: black;
   /*cambia el color del boton al pasar el mouse*/
-}
+
 
 /********************* Guitarras Destacados *******************/
 
@@ -637,20 +635,20 @@ body {
 
 /************************ Usados Luthier Grilla **********************************/
 
-.usados-luthier-container {
+/* .usados-luthier-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   /* 2 columnas, de 1fr. 2 columnas iguales */
-  justify-items: center;
+  /* justify-items: center;
   /* centra los contenidos en la celda */
-  align-items: center;
+  /* align-items: center;
   margin-top: 20px;
   gap: 20px;
   /*espacio entre los elementos*/
-  padding: 20px;
-}
+  /* padding: 20px;
+} */ 
 
-.usados-luthier-padre h3 {
+/* .usados-luthier-padre h3 {
   text-align: center;
   font-size: 35px;
   color: white;
@@ -661,41 +659,40 @@ body {
   font-optical-sizing: auto;
   font-weight: 250;
   font-style: normal;
-}
+} */
 
 /*************************ARREGLAR ESTO*****************************/
-.usados-luthier-padre p {
+/* .usados-luthier-padre p {
   text-align: center;
   font-size: 30px;
   color: rgb(255, 255, 255);
   margin: 10px;
   padding: 10px;
   background-color: rgba(0, 0, 0, 0.421);
-  font-family: "Roboto Mono", monospace;
   font-optical-sizing: auto;
   font-weight: 250;
   font-style: normal;
-}
+} */
 
-.usados,
+/* .usados,
 .luthier {
   /*background: #f5f5f5; /* opcional, para ver las cajas */
   /*padding: 15px;*/
-  border-radius: 10px;
+  /* border-radius: 10px;
   /* esquinas redondeadas */
-  text-align: center;
+  /* text-align: center;
   /* centra el texto e imagen */
-  width: 100%;
-}
+  /* width: 100%; */
 
-.usados-item,
+
+/* .usados-item,
 .luthier-item {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 10px;
   cursor: pointer;
-}
+} */
 
 /*********************** sobre nosotros *****************************/
 

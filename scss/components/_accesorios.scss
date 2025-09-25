@@ -1,0 +1,50 @@
+.grid-accesorios {
+  margin: 5px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 250px;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.grid-item {
+  background-color: rgba(0, 0, 0, 0.589);
+}
+
+.grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  cursor: pointer;
+  /* ajusta el tamaño de la imagen */
+}
+
+.img4 {
+  grid-column: span 2;
+  /* ocupa 2 columnas */
+}
+
+.img6 {
+  grid-row: span 2;
+  /* ocupa 2 columnas */
+}
+
+.img8 {
+  grid-row: span 2;
+  /* ocupa 2 columnas */
+}
+
+.grid-item {
+  position: relative;
+  /*un elemento absoluto no puede salir*/
+}
+
+.grid-item h3 {
+  position: absolute;
+  /*posiciona el elemento respecto a su contenedor*/
+  bottom: 0;
+  /*lo posiciona abajo*/
+  color: rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0.648);
+  padding: 10px;
+}

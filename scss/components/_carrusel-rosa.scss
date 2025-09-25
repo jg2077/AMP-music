@@ -1,0 +1,37 @@
+.titulo-rosa {
+  text-align: center;
+  font-size: 35px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(255, 0, 208);
+  margin: 10px;
+  padding: 10px;
+  
+}
+
+.pink-background {
+  background-color: rgba(255, 0, 208, 0.537);
+}
+
+.carousel-inner h5 {
+  color: rgb(255, 255, 255) !important;
+}
+
+.carousel-inner p {
+  color: rgb(255, 255, 255) !important;
+}
+
+.carousel-caption {
+  position: absolute;
+  bottom: 20px;
+  /* distancia desde el borde inferior */
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  width: 100%;
+  color: white;
+  /* asegurate de que el texto sea visible sobre la imagen */
+  background-color: rgba(0, 0, 0, 0.232);
+  /* opcional: fondo semitransparente para mejor legibilidad */
+  padding: 10px;
+  border-radius: 5px;
+}

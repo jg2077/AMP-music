@@ -9,7 +9,53 @@
 }
 
 body {
-  font-family: "Roboto Mono", monospace;
+  background-image: url("../imagenes/fondo.jpg");
+  background-size: cover;
+  /* imagen como fondo */
+  background-repeat: no-repeat;
+  /* no se repite la imagen */
+  background-position: center;
+  /* centra la imagen */
 }
 
-/*clases sueltas carrusel?*/
+h1 {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 250;
+  font-style: normal;
+}
+
+h2 {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 250;
+  font-style: normal;
+}
+
+h3 {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 250;
+  font-style: normal;
+}
+
+h5 {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 250;
+  font-style: normal;
+}
+
+p {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 250;
+  font-style: normal;
+}
+
+a {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 250;
+  font-style: normal;
+}
