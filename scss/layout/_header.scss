@@ -1,0 +1,30 @@
+header {
+    .bg-body-tertiary {
+        background-color: rgb(228, 181, 119) !important;
+        /*letras en negro*/
+        color: black !important;
+        font-weight: 400;
+    }
+
+    .nav-link:hover {
+        color: white !important;
+    }
+
+    div {
+
+        .logo {
+            width: 70px;
+            /* ajustá el tamaño del logo*/
+            height: auto;
+
+        }
+
+        .carrito {
+            /*ajusta el tamaño del carrito*/
+            width: 30px;
+            height: auto;
+            cursor: pointer;
+        }
+
+    }
+}

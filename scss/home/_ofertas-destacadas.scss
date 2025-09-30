@@ -1,0 +1,60 @@
+.contenedor-ofertas {
+  display: flex;
+  /*para que los elementos se muestren en una sola linea*/
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  /*para que los elementos se ajusten al ancho de la pantalla*/
+}
+.ofertas-destacados .contenedor-ofertas div {
+  border: 1px solid rgb(0, 0, 0);
+  /* borde rojo*/
+  width: 300px;
+  height: 325px;
+  margin: 15px;
+  text-align: center;
+  background-image: url("../imagenes/card-fondo.jpg");
+  background-size: cover;
+  /* imagen como fondo */
+  background-repeat: no-repeat;
+  /* no se repite la imagen */
+  background-position: center;
+  /* centra la imagen */
+}
+
+.ofertas-destacados h2 {
+  text-align: center;
+  font-size: 35px;
+  color: white;
+  background-color: black;
+  margin: 10px;
+  padding: 10px;
+}
+
+.ofertas-destacados h3 {
+  margin: 5px;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+}
+
+.ofertas-destacados div img {
+  width: 250px;
+  height: 250px;
+  object-fit: contain;
+  /* ajusta el tamaño */
+}
+
+.ofertas-destacados div a {
+  text-decoration: none;
+  /*quita el subrayado*/
+  color: rgb(255, 255, 255);
+  background-color: black;
+  padding: 5px;
+}
+
+.ofertas-destacados div a:hover {
+  background-color: rgb(255, 255, 255);
+  color: black;
+  /*cambia el color del boton al pasar el mouse*/
+}
