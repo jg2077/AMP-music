@@ -33,7 +33,7 @@
   /* esquinas redondeadas */
 }
 
-.redes_sociales-container {
+.redes-sociales-container {
   justify-self: end;
   /* pega el bloque de redes a la derecha */
   display: flex;
@@ -47,7 +47,7 @@
   /*los iconos se modifican como texto*/
 }
 
-.redes_sociales-container a:hover {
+.redes-sociales-container a:hover {
   color: rgb(228, 181, 119);
 }
 
@@ -735,5 +735,6 @@ a {
 /*arreglar margins en custom shop*/
 /*arreglar how container*/
 /*Como hago para que un padding no ocupe todo el ancho y solo los bordes*/
+/*en estilos.scss pasar de @import a @use?*/
 
 /*# sourceMappingURL=estilos.css.map */
