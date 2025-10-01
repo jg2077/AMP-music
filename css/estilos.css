@@ -45,6 +45,7 @@
   color: rgb(255, 255, 255);
   font-size: 20px;
   /*los iconos se modifican como texto*/
+  transition: 0.5s;
 }
 
 .redes-sociales-container a:hover {
@@ -64,6 +65,7 @@ header .bg-body-tertiary {
 }
 header .nav-link:hover {
   color: white !important;
+  transition: 0.5s;
 }
 header div .logo {
   width: 70px;
@@ -91,6 +93,14 @@ header div .carrito {
   /* no se repite la imagen */
   background-position: center;
   /* centra la imagen */
+  transition: 1s;
+}
+
+.ofertas-destacados .contenedor-ofertas div:hover {
+  transform: scale(1.1);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 .ofertas-destacados h2 {
@@ -274,6 +284,14 @@ header div .carrito {
   /* no se repite la imagen */
   background-position: center;
   /* centra la imagen */
+  transition: 1s;
+}
+
+.guitarras-destacados .contenedor-guitarras div:hover {
+  transform: scale(1.1);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 .guitarras-destacados h2 {
@@ -304,6 +322,7 @@ header div .carrito {
   color: rgb(255, 255, 255);
   background-color: black;
   padding: 5px;
+  transition: 1s;
 }
 
 .guitarras-destacados div a:hover {
@@ -336,6 +355,14 @@ header div .carrito {
   /* no se repite la imagen */
   background-position: center;
   /* centra la imagen */
+  transition: 1s;
+}
+
+.bajos-destacados .contenedor-bajos div:hover {
+  transform: scale(1.1);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 .bajos-destacados h2 {
@@ -366,6 +393,7 @@ header div .carrito {
   color: rgb(255, 255, 255);
   background-color: black;
   padding: 5px;
+  transition: 1s;
 }
 
 .bajos-destacados div a:hover {
@@ -655,6 +683,7 @@ a {
   color: white;
   background-color: black;
   padding: 5px;
+  transition: 1s;
 }
 
 /***************************Mixin****************************/
@@ -666,6 +695,31 @@ a {
   flex-wrap: wrap;
 }
 
+/***************************animaciones****************************/
+.titulo-rosa {
+  animation-name: slidein;
+  /* Nombre de la animación que quieres aplicar. */
+  animation-duration: 2s;
+  /* Duración total de la animación.*/
+  animation-timing-function: ease-in-out;
+  /* Controla la velocidad del cambio durante la animación. */
+  animation-direction: initial;
+  /* Define en qué dirección corre la animación. */
+  animation-delay: 1s;
+  /* Retraso antes de que la animación empiece. */
+}
+
+/**********************keyframes**************************/
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
 /**********************media query 1000px grilla usados luthier *********************/
 @media (max-width: 1000px) {
   .usados-luthier-container {

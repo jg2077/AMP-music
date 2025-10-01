@@ -22,6 +22,14 @@
   /* no se repite la imagen */
   background-position: center;
   /* centra la imagen */
+  transition: 1s;
+}
+
+.bajos-destacados .contenedor-bajos div:hover {
+  transform: scale(1.1);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 .bajos-destacados h2 {
@@ -52,6 +60,7 @@
   color: rgb(255, 255, 255);
   background-color: black;
   padding: 5px;
+  transition: 1s;
 }
 
 .bajos-destacados div a:hover {
