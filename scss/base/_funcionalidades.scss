@@ -16,6 +16,7 @@ $colores: pink, white, black;
     color: nth($colores, 2);
     background-color: nth($colores, 3);
     padding: 5px;
+    transition: 1s
 }
 
 .ofertas-destacados div a {
@@ -33,5 +34,34 @@ $colores: pink, white, black;
 }
 
 .contenedor-ofertas {
-  @include flex(flex, space-around, center, row, wrap);
+    @include flex(flex, space-around, center, row, wrap);
+}
+
+/***************************animaciones****************************/
+
+.titulo-rosa {
+    animation-name: slidein;
+    /* Nombre de la animación que quieres aplicar. */
+    animation-duration: 2s;
+    /* Duración total de la animación.*/
+    animation-timing-function: ease-in-out;
+    /* Controla la velocidad del cambio durante la animación. */
+    animation-direction: initial;
+    /* Define en qué dirección corre la animación. */
+    animation-delay: 1s;
+    /* Retraso antes de que la animación empiece. */
+}
+
+/**********************keyframes**************************/
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%
+    }
 }
