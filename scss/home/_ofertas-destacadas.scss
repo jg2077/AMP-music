@@ -1,12 +1,13 @@
-.contenedor-ofertas {
-  display: flex;
-  /*para que los elementos se muestren en una sola linea*/
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  /*para que los elementos se ajusten al ancho de la pantalla*/
-}
+// .contenedor-ofertas {
+//   display: flex;
+//   /*para que los elementos se muestren en una sola linea*/
+//   justify-content: space-around;
+//   align-items: center;
+//   flex-direction: row;
+//   flex-wrap: wrap;
+//   /*para que los elementos se ajusten al ancho de la pantalla*/
+// }
+
 .ofertas-destacados .contenedor-ofertas div {
   border: 1px solid rgb(0, 0, 0);
   /* borde rojo*/
@@ -45,13 +46,13 @@
   /* ajusta el tamaño */
 }
 
-.ofertas-destacados div a {
-  text-decoration: none;
-  /*quita el subrayado*/
-  color: rgb(255, 255, 255);
-  background-color: black;
-  padding: 5px;
-}
+// .ofertas-destacados div a {
+//   text-decoration: none;
+//   /*quita el subrayado*/
+//   color: rgb(255, 255, 255);
+//   background-color: black;
+//   padding: 5px;
+// }
 
 .ofertas-destacados div a:hover {
   background-color: rgb(255, 255, 255);
