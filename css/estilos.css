@@ -77,16 +77,6 @@ header div .carrito {
   cursor: pointer;
 }
 
-.contenedor-ofertas {
-  display: flex;
-  /*para que los elementos se muestren en una sola linea*/
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  /*para que los elementos se ajusten al ancho de la pantalla*/
-}
-
 .ofertas-destacados .contenedor-ofertas div {
   border: 1px solid rgb(0, 0, 0);
   /* borde rojo*/
@@ -123,14 +113,6 @@ header div .carrito {
   height: 250px;
   object-fit: contain;
   /* ajusta el tamaño */
-}
-
-.ofertas-destacados div a {
-  text-decoration: none;
-  /*quita el subrayado*/
-  color: rgb(255, 255, 255);
-  background-color: black;
-  padding: 5px;
 }
 
 .ofertas-destacados div a:hover {
@@ -600,7 +582,6 @@ header div .carrito {
   padding: 10px;
 }
 
-/*variables listas mixin extend*/
 /***fuentes**/
 * {
   margin: 0;
@@ -658,6 +639,31 @@ a {
   font-optical-sizing: auto;
   font-weight: 250;
   font-style: normal;
+}
+
+/***********************Lista de colores**************************/
+/*espacios entre los colores para que funcione*/
+.ofertas-destacados h2 {
+  color: white;
+  background-color: black;
+}
+
+/***************************Extend****************************/
+.ofertas-destacados div a {
+  text-decoration: none;
+  /*quita el subrayado*/
+  color: white;
+  background-color: black;
+  padding: 5px;
+}
+
+/***************************Mixin****************************/
+.contenedor-ofertas {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 /**********************media query 1000px grilla usados luthier *********************/
