@@ -8,53 +8,40 @@
   min-height: 37px;
   display: grid;
   grid-template-columns: auto 1fr auto;
-  /* izquierda - centro - derecha */
   align-items: center;
-  /* centra verticalmente */
 }
-
-.footer-left {
+.pie .footer-left {
   justify-self: start;
-  /* alinea el bloque a la izquierda */
   font-size: 15px;
   padding: 10px;
   border: 2px solid white;
   border-radius: 10px;
-  /* esquinas redondeadas */
 }
-
-.footer-text {
+.pie .footer-left p {
+  margin: 0 !important;
+}
+.pie .footer-text {
   justify-self: center;
-  /* centra el texto en su columna */
   font-size: 15px;
   padding: 10px;
   border: 2px solid white;
   border-radius: 10px;
-  /* esquinas redondeadas */
 }
-
-.redes-sociales-container {
+.pie .footer-text p {
+  margin: 0 !important;
+}
+.pie .redes-sociales-container {
   justify-self: end;
-  /* pega el bloque de redes a la derecha */
   display: flex;
   gap: 10px;
-  /* espacio entre iconos */
 }
-
-.redes-sociales-container a {
+.pie .redes-sociales-container a {
   color: rgb(255, 255, 255);
   font-size: 20px;
-  /*los iconos se modifican como texto*/
   transition: 0.5s;
 }
-
-.redes-sociales-container a:hover {
+.pie .redes-sociales-container a:hover {
   color: rgb(228, 181, 119);
-}
-
-.footer-left p,
-.footer-text p {
-  margin: 0 !important;
 }
 
 header .bg-body-tertiary {
@@ -260,40 +247,6 @@ header div .carrito {
   cursor: pointer;
 }
 
-.contenedor-guitarras {
-  display: flex;
-  /*para que los elementos se muestren en una sola linea*/
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  /*para que los elementos se ajusten al ancho de la pantalla*/
-}
-
-.guitarras-destacados .contenedor-guitarras div {
-  border: 1px solid rgb(0, 0, 0);
-  /* borde rojo*/
-  width: 300px;
-  height: 325px;
-  margin: 50px;
-  text-align: center;
-  background-image: url("../imagenes/card-fondo.jpg");
-  background-size: cover;
-  /* imagen como fondo */
-  background-repeat: no-repeat;
-  /* no se repite la imagen */
-  background-position: center;
-  /* centra la imagen */
-  transition: 1s;
-}
-
-.guitarras-destacados .contenedor-guitarras div:hover {
-  transform: scale(1.1);
-  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-}
-
 .guitarras-destacados h2 {
   text-align: center;
   font-size: 35px;
@@ -302,67 +255,51 @@ header div .carrito {
   margin: 10px;
   padding: 10px;
 }
-
 .guitarras-destacados h3 {
   margin: 5px;
   color: rgb(255, 255, 255);
   font-size: 20px;
 }
-
-.guitarras-destacados div img {
-  width: 250px;
-  height: 250px;
-  object-fit: contain;
-  /* ajusta el tamaño */
-}
-
-.guitarras-destacados div a {
-  text-decoration: none;
-  /*quita el subrayado*/
-  color: rgb(255, 255, 255);
-  background-color: black;
-  padding: 5px;
-  transition: 1s;
-}
-
-.guitarras-destacados div a:hover {
-  background-color: rgb(255, 255, 255);
-  color: black;
-  /*cambia el color del boton al pasar el mouse*/
-}
-
-.contenedor-bajos {
+.guitarras-destacados .contenedor-guitarras {
   display: flex;
-  /*para que los elementos se muestren en una sola linea*/
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  /*para que los elementos se ajusten al ancho de la pantalla*/
 }
-
-.bajos-destacados .contenedor-bajos div {
+.guitarras-destacados .contenedor-guitarras div {
   border: 1px solid rgb(0, 0, 0);
-  /* borde rojo*/
   width: 300px;
   height: 325px;
   margin: 50px;
   text-align: center;
   background-image: url("../imagenes/card-fondo.jpg");
   background-size: cover;
-  /* imagen como fondo */
   background-repeat: no-repeat;
-  /* no se repite la imagen */
   background-position: center;
-  /* centra la imagen */
   transition: 1s;
 }
-
-.bajos-destacados .contenedor-bajos div:hover {
+.guitarras-destacados .contenedor-guitarras div:hover {
   transform: scale(1.1);
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+.guitarras-destacados .contenedor-guitarras div img {
+  width: 250px;
+  height: 250px;
+  object-fit: contain;
+}
+.guitarras-destacados .contenedor-guitarras div a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  background-color: black;
+  padding: 5px;
+  transition: 1s;
+}
+.guitarras-destacados .contenedor-guitarras div a:hover {
+  background-color: rgb(255, 255, 255);
+  color: black;
 }
 
 .bajos-destacados h2 {
@@ -373,33 +310,51 @@ header div .carrito {
   margin: 10px;
   padding: 10px;
 }
-
 .bajos-destacados h3 {
   margin: 5px;
   color: rgb(255, 255, 255);
   font-size: 20px;
 }
-
-.bajos-destacados div img {
+.bajos-destacados .contenedor-bajos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.bajos-destacados .contenedor-bajos div {
+  border: 1px solid rgb(0, 0, 0);
+  width: 300px;
+  height: 325px;
+  margin: 50px;
+  text-align: center;
+  background-image: url("../imagenes/card-fondo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: 1s;
+}
+.bajos-destacados .contenedor-bajos div:hover {
+  transform: scale(1.1);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+.bajos-destacados .contenedor-bajos div img {
   width: 250px;
   height: 250px;
   object-fit: contain;
-  /* ajusta el tamaño */
 }
-
-.bajos-destacados div a {
+.bajos-destacados .contenedor-bajos div a {
   text-decoration: none;
-  /*quita el subrayado*/
   color: rgb(255, 255, 255);
   background-color: black;
   padding: 5px;
   transition: 1s;
 }
-
-.bajos-destacados div a:hover {
+.bajos-destacados .contenedor-bajos div a:hover {
   background-color: rgb(255, 255, 255);
   color: black;
-  /*cambia el color del boton al pasar el mouse*/
 }
 
 .banner-section {
@@ -493,6 +448,14 @@ header div .carrito {
   object-fit: cover; /* Ajusta la imagen dentro del contenedor */
 }
 
+.seccion-nosotros h2 {
+  text-align: center;
+  font-size: 35px;
+  color: rgb(255, 255, 255);
+  background-color: black;
+  margin: 10px;
+  padding: 10px;
+}
 .seccion-nosotros p {
   text-align: center;
   font-size: 20px;
@@ -502,16 +465,7 @@ header div .carrito {
   background-color: rgba(0, 0, 0, 0.421);
 }
 
-.seccion-nosotros h2 {
-  text-align: center;
-  font-size: 35px;
-  color: rgb(255, 255, 255);
-  background-color: black;
-  margin: 10px;
-  padding: 10px;
-}
-
-.titulo-sobre-nosotros {
+section .titulo-sobre-nosotros {
   text-align: center;
   font-size: 35px;
   color: white;
@@ -519,44 +473,37 @@ header div .carrito {
   margin: 10px;
   padding: 10px;
 }
-
-.grilla-ubi {
+section .grilla-ubi {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  /* 3 columnas iguales */
   gap: 16px;
-  /* espacio entre columnas */
   align-items: start;
-  /* alineación vertical de los items */
   padding: 16px;
 }
-
-.grilla-ubi .item {
+section .grilla-ubi .item {
   border-radius: 8px;
   padding: 20px;
   text-align: center;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
   background-image: url("../imagenes/card-fondo.jpg");
-  /************** ARRGELAR ESTO ***************/
   background-size: cover;
-  /* imagen como fondo */
   background-repeat: no-repeat;
-  /* no se repite la imagen */
   background-position: center;
-  /* centra la imagen */
 }
-
-.item h3 {
+section .grilla-ubi .item h3 {
   margin: 0 0 8px;
   font-size: 18px;
   color: white;
 }
-
-.grilla-ubi .item iframe {
+section .grilla-ubi .item iframe {
   width: 100%;
   height: 250px;
-  /* puedes ajustar la altura según tu diseño */
   display: block;
+}
+@media (max-width: 1000px) {
+  section .grilla-ubi {
+    grid-template-columns: 1fr;
+  }
 }
 
 .grid-accesorios {
@@ -790,6 +737,7 @@ a {
 /*estilos para h2 en generales?*/
 /*grilla luthier usados p dentro del item*/
 /*achicar carrussel sin romper responsive*/
+/*logo fender responsive*/
 /*aspect ratio en la imagen custom banner*/
 /*margin top banner custom*/
 /*arreglar margins en custom shop*/
