@@ -1,38 +1,45 @@
-.grilla-ubi {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  /* 3 columnas iguales */
-  gap: 16px;
-  /* espacio entre columnas */
-  align-items: start;
-  /* alineación vertical de los items */
-  padding: 16px;
-}
+section {
+  .titulo-sobre-nosotros {
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    background-color: black;
+    margin: 10px;
+    padding: 10px;
+  }
 
-.grilla-ubi .item {
-  border-radius: 8px;
-  padding: 20px;
-  text-align: center;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
-  background-image: url("../imagenes/card-fondo.jpg");
-  /************** ARRGELAR ESTO ***************/
-  background-size: cover;
-  /* imagen como fondo */
-  background-repeat: no-repeat;
-  /* no se repite la imagen */
-  background-position: center;
-  /* centra la imagen */
-}
+  .grilla-ubi {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    align-items: start;
+    padding: 16px;
 
-.item h3 {
-  margin: 0 0 8px;
-  font-size: 18px;
-  color: white;
-}
+    .item {
+      border-radius: 8px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+      background-image: url("../imagenes/card-fondo.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
 
-.grilla-ubi .item iframe {
-  width: 100%;
-  height: 250px;
-  /* puedes ajustar la altura según tu diseño */
-  display: block;
+      h3 {
+        margin: 0 0 8px;
+        font-size: 18px;
+        color: white;
+      }
+
+      iframe {
+        width: 100%;
+        height: 250px;
+        display: block;
+      }
+    }
+
+    @media (max-width: 1000px) {
+      grid-template-columns: 1fr;
+    }
+  }
 }

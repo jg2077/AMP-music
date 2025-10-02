@@ -1,70 +1,63 @@
-.contenedor-bajos {
-  display: flex;
-  /*para que los elementos se muestren en una sola linea*/
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  /*para que los elementos se ajusten al ancho de la pantalla*/
-}
+.bajos-destacados {
+  h2 {
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    background-color: black;
+    margin: 10px;
+    padding: 10px;
+  }
 
-.bajos-destacados .contenedor-bajos div {
-  border: 1px solid rgb(0, 0, 0);
-  /* borde rojo*/
-  width: 300px;
-  height: 325px;
-  margin: 50px;
-  text-align: center;
-  background-image: url("../imagenes/card-fondo.jpg");
-  background-size: cover;
-  /* imagen como fondo */
-  background-repeat: no-repeat;
-  /* no se repite la imagen */
-  background-position: center;
-  /* centra la imagen */
-  transition: 1s;
-}
+  h3 {
+    margin: 5px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+  }
 
-.bajos-destacados .contenedor-bajos div:hover {
-  transform: scale(1.1);
-  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-}
+  .contenedor-bajos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
 
-.bajos-destacados h2 {
-  text-align: center;
-  font-size: 35px;
-  color: white;
-  background-color: black;
-  margin: 10px;
-  padding: 10px;
-}
+    div {
+      border: 1px solid rgb(0, 0, 0);
+      width: 300px;
+      height: 325px;
+      margin: 50px;
+      text-align: center;
+      background-image: url("../imagenes/card-fondo.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      transition: 1s;
 
-.bajos-destacados h3 {
-  margin: 5px;
-  color: rgb(255, 255, 255);
-  font-size: 20px;
-}
+      &:hover {
+        transform: scale(1.1);
+        box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+      }
 
-.bajos-destacados div img {
-  width: 250px;
-  height: 250px;
-  object-fit: contain;
-  /* ajusta el tamaño */
-}
+      img {
+        width: 250px;
+        height: 250px;
+        object-fit: contain;
+      }
 
-.bajos-destacados div a {
-  text-decoration: none;
-  /*quita el subrayado*/
-  color: rgb(255, 255, 255);
-  background-color: black;
-  padding: 5px;
-  transition: 1s;
-}
+      a {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        background-color: black;
+        padding: 5px;
+        transition: 1s;
 
-.bajos-destacados div a:hover {
-  background-color: rgb(255, 255, 255);
-  color: black;
-  /*cambia el color del boton al pasar el mouse*/
+        &:hover {
+          background-color: rgb(255, 255, 255);
+          color: black;
+        }
+      }
+    }
+  }
 }
