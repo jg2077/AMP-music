@@ -616,6 +616,11 @@ a {
   font-style: normal;
 }
 
+/***************************Variables****************************/
+.titulo-rosa {
+  font-style: normal;
+}
+
 /***********************Lista de colores**************************/
 /*espacios entre los colores para que funcione*/
 .ofertas-destacados h2 {
@@ -731,6 +736,7 @@ a {
   }
 }
 /*rompe how entre 1000 y 800*/
+/*mostrar mas imagen en how*/
 /*los carruseles cambian el color de letra por igual*/
 /*media query carrusel custom 760 no muestra textos*/
 /*agregar h2 accecsorios*/
