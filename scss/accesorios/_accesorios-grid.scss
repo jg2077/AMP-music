@@ -8,7 +8,7 @@
 }
 
 .grid-accesorios {
-  margin: 5px;
+  margin: 25px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: 250px;
@@ -17,7 +17,17 @@
 }
 
 .grid-item {
-  background-color: rgba(0, 0, 0, 0.589);
+  border: solid;
+  margin: 20px;
+  background-image: url("../imagenes/card-fondo.jpg");
+  transition: 1s;
+
+  &:hover {
+        transform: scale(1.1);
+        box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+      }
 }
 
 .grid-item img {

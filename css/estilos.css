@@ -48,7 +48,7 @@ header .bg-body-tertiary {
   background-color: rgb(228, 181, 119) !important;
   /*letras en negro*/
   color: black !important;
-  font-weight: 400;
+  font-weight: 600;
 }
 header .nav-link:hover {
   color: white !important;
@@ -67,7 +67,7 @@ header div .carrito {
 }
 
 .ofertas-destacados .contenedor-ofertas div {
-  border: 1px solid rgb(0, 0, 0);
+  border: solid;
   /* borde rojo*/
   width: 300px;
   height: 325px;
@@ -278,7 +278,7 @@ header div .carrito {
   flex-wrap: wrap;
 }
 .guitarras-destacados .contenedor-guitarras div {
-  border: 1px solid rgb(0, 0, 0);
+  border: solid;
   width: 300px;
   height: 325px;
   margin: 50px;
@@ -334,7 +334,7 @@ header div .carrito {
   flex-wrap: wrap;
 }
 .bajos-destacados .contenedor-bajos div {
-  border: 1px solid rgb(0, 0, 0);
+  border: solid;
   width: 300px;
   height: 325px;
   margin: 50px;
@@ -512,7 +512,7 @@ section .grilla-ubi .item {
   background-position: center;
 }
 section .grilla-ubi .item h3 {
-  margin: 0 0 8px;
+  margin: 0 0 8px; /* top right-left bottom */
   font-size: 18px;
   color: white;
 }
@@ -537,7 +537,7 @@ section .grilla-ubi .item iframe {
 }
 
 .grid-accesorios {
-  margin: 5px;
+  margin: 25px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: 250px;
@@ -546,7 +546,16 @@ section .grilla-ubi .item iframe {
 }
 
 .grid-item {
-  background-color: rgba(0, 0, 0, 0.589);
+  border: solid;
+  margin: 20px;
+  background-image: url("../imagenes/card-fondo.jpg");
+  transition: 1s;
+}
+.grid-item:hover {
+  transform: scale(1.1);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 .grid-item img {
@@ -816,5 +825,6 @@ a {
 /*Como hago para que un padding no ocupe todo el ancho y solo los bordes*/
 /*en estilos.scss pasar de @import a @use?*/
 /*html h1 titulo-custom no esta dentro de la seccion porque estira la imagen ojo media query h1*/
+/*margin top en accesorios grid item*/
 
 /*# sourceMappingURL=estilos.css.map */
