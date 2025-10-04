@@ -90,9 +90,9 @@ header div .carrito {
   -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
-.ofertas-destacados h2 {
+.titulo-principal {
   text-align: center;
-  font-size: 35px;
+  font-size: 45px;
   color: white;
   background-color: black;
   margin: 10px;
@@ -108,6 +108,7 @@ header div .carrito {
 .ofertas-destacados div img {
   width: 250px;
   height: 250px;
+  margin-top: 5px;
   object-fit: contain;
   /* ajusta el tamaño */
 }
@@ -132,11 +133,11 @@ header div .carrito {
 }
 
 .carousel-inner h5 {
-  color: rgb(0, 0, 0) !important;
+  color: rgb(255, 255, 255) !important;
 }
 
 .carousel-inner p {
-  color: rgb(0, 0, 0) !important;
+  color: rgb(255, 255, 255) !important;
 }
 
 .carousel-caption {
@@ -247,10 +248,19 @@ header div .carrito {
   cursor: pointer;
 }
 
+.guitarras-destacados .titulo-gb {
+  text-align: center;
+  font-size: 45px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.63);
+  margin: 10px auto; /*el auto lo centra*/
+  padding: 10px;
+  width: fit-content;
+}
 .guitarras-destacados h2 {
   text-align: center;
   font-size: 35px;
-  color: white;
+  color: rgb(255, 255, 255);
   background-color: black;
   margin: 10px;
   padding: 10px;
@@ -289,6 +299,7 @@ header div .carrito {
   width: 250px;
   height: 250px;
   object-fit: contain;
+  margin-top: 5px;
 }
 .guitarras-destacados .contenedor-guitarras div a {
   text-decoration: none;
@@ -305,7 +316,7 @@ header div .carrito {
 .bajos-destacados h2 {
   text-align: center;
   font-size: 35px;
-  color: white;
+  color: rgb(255, 255, 255);
   background-color: black;
   margin: 10px;
   padding: 10px;
@@ -344,6 +355,7 @@ header div .carrito {
   width: 250px;
   height: 250px;
   object-fit: contain;
+  margin-top: 5px;
 }
 .bajos-destacados .contenedor-bajos div a {
   text-decoration: none;
@@ -355,6 +367,15 @@ header div .carrito {
 .bajos-destacados .contenedor-bajos div a:hover {
   background-color: rgb(255, 255, 255);
   color: black;
+}
+
+.titulo-custom {
+  text-align: center;
+  font-size: 45px;
+  color: white;
+  background-color: black;
+  margin: 10px;
+  padding: 10px;
 }
 
 .banner-section {
@@ -377,7 +398,7 @@ header div .carrito {
   /*borde rojo*/
 }
 
-.banner-section h1 {
+.banner-section h2 {
   text-align: center;
   color: rgb(255, 255, 255);
   padding: 10px;
@@ -448,9 +469,9 @@ header div .carrito {
   object-fit: cover; /* Ajusta la imagen dentro del contenedor */
 }
 
-.seccion-nosotros h2 {
+.seccion-nosotros .titulo-historia {
   text-align: center;
-  font-size: 35px;
+  font-size: 45px;
   color: rgb(255, 255, 255);
   background-color: black;
   margin: 10px;
@@ -506,6 +527,15 @@ section .grilla-ubi .item iframe {
   }
 }
 
+.titulo-accesorios {
+  text-align: center;
+  font-size: 45px;
+  color: white;
+  background-color: black;
+  margin: 10px;
+  padding: 10px;
+}
+
 .grid-accesorios {
   margin: 5px;
   display: grid;
@@ -523,8 +553,8 @@ section .grilla-ubi .item iframe {
   width: 100%;
   height: 100%;
   object-fit: contain;
-  cursor: pointer;
   /* ajusta el tamaño de la imagen */
+  cursor: pointer;
 }
 
 .img4 {
@@ -724,15 +754,50 @@ a {
 @media (max-width: 768px) {
   .favs-container .row {
     display: flex;
-    flex-direction: column; /* Apilar columnas verticalmente */
-    align-items: center; /* Centrar contenido horizontalmente */
+    flex-direction: column;
+    /* Apilar columnas verticalmente */
+    align-items: center;
+    /* Centrar contenido horizontalmente */
   }
   .favs-container .col-1 {
-    display: none; /* Ocultar las columnas vacías */
+    display: none;
+    /* Ocultar las columnas vacías */
   }
   .columna-imagenes {
-    width: 100%; /* Cada columna ocupa todo el ancho */
+    width: 100%;
+    /* Cada columna ocupa todo el ancho */
     margin-bottom: 20px;
+  }
+}
+/**********************h1 fuente mobile*********************/
+@media (max-width: 600px) {
+  .titulo-principal {
+    font-size: 30px;
+  }
+}
+@media (max-width: 600px) {
+  .guitarras-destacados .titulo-gb {
+    font-size: 30px;
+  }
+}
+@media (max-width: 600px) {
+  .titulo-custom {
+    font-size: 30px;
+  }
+}
+@media (max-width: 600px) {
+  .titulo-custom {
+    font-size: 30px;
+  }
+}
+@media (max-width: 600px) {
+  .titulo-accesorios {
+    font-size: 30px;
+  }
+}
+@media (max-width: 600px) {
+  .seccion-nosotros .titulo-historia {
+    font-size: 28px;
   }
 }
 /*rompe how entre 1000 y 800*/
@@ -750,5 +815,6 @@ a {
 /*arreglar how container*/
 /*Como hago para que un padding no ocupe todo el ancho y solo los bordes*/
 /*en estilos.scss pasar de @import a @use?*/
+/*html h1 titulo-custom no esta dentro de la seccion porque estira la imagen ojo media query h1*/
 
 /*# sourceMappingURL=estilos.css.map */
