@@ -73,13 +73,7 @@ header div .carrito {
   height: 325px;
   margin: 15px;
   text-align: center;
-  background-image: url("../imagenes/card-fondo.jpg");
-  background-size: cover;
-  /* imagen como fondo */
-  background-repeat: no-repeat;
-  /* no se repite la imagen */
-  background-position: center;
-  /* centra la imagen */
+  background-color: white;
   transition: 1s;
 }
 
@@ -94,9 +88,10 @@ header div .carrito {
   text-align: center;
   font-size: 45px;
   color: white;
-  background-color: black;
+  background-color: red;
   margin: 10px;
   padding: 10px;
+  border: black solid;
 }
 
 .ofertas-destacados h3 {
@@ -114,8 +109,8 @@ header div .carrito {
 }
 
 .ofertas-destacados div a:hover {
-  background-color: rgb(255, 255, 255);
-  color: black;
+  background-color: rgb(255, 0, 0);
+  color: rgb(255, 255, 255);
   /*cambia el color del boton al pasar el mouse*/
 }
 
@@ -126,6 +121,7 @@ header div .carrito {
   background-color: rgb(255, 0, 208);
   margin: 10px;
   padding: 10px;
+  border: black solid;
 }
 
 .pink-background {
@@ -172,10 +168,11 @@ header div .carrito {
 .usados-luthier-padre h3 {
   text-align: center;
   font-size: 35px;
-  color: white;
-  background-color: black;
+  color: rgb(0, 0, 0);
+  background-color: rgb(228, 181, 119);
   margin: 10px;
   padding: 10px;
+  border: black solid;
 }
 
 .usados-luthier-padre p {
@@ -252,18 +249,20 @@ header div .carrito {
   text-align: center;
   font-size: 45px;
   color: white;
-  background-color: rgba(0, 0, 0, 0.63);
+  background-color: red;
   margin: 10px auto; /*el auto lo centra*/
   padding: 10px;
   width: fit-content;
+  border: black solid;
 }
 .guitarras-destacados h2 {
   text-align: center;
   font-size: 35px;
-  color: rgb(255, 255, 255);
-  background-color: black;
+  color: black;
+  background-color: rgb(228, 181, 119);
   margin: 10px;
   padding: 10px;
+  border: black solid;
 }
 .guitarras-destacados h3 {
   margin: 5px;
@@ -283,10 +282,7 @@ header div .carrito {
   height: 325px;
   margin: 50px;
   text-align: center;
-  background-image: url("../imagenes/card-fondo.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  background-color: white;
   transition: 1s;
 }
 .guitarras-destacados .contenedor-guitarras div:hover {
@@ -309,17 +305,18 @@ header div .carrito {
   transition: 1s;
 }
 .guitarras-destacados .contenedor-guitarras div a:hover {
-  background-color: rgb(255, 255, 255);
-  color: black;
+  background-color: red;
+  color: white;
 }
 
 .bajos-destacados h2 {
   text-align: center;
   font-size: 35px;
-  color: rgb(255, 255, 255);
-  background-color: black;
+  color: rgb(0, 0, 0);
+  background-color: rgb(228, 181, 119);
   margin: 10px;
   padding: 10px;
+  border: black solid;
 }
 .bajos-destacados h3 {
   margin: 5px;
@@ -339,10 +336,7 @@ header div .carrito {
   height: 325px;
   margin: 50px;
   text-align: center;
-  background-image: url("../imagenes/card-fondo.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  background-color: white;
   transition: 1s;
 }
 .bajos-destacados .contenedor-bajos div:hover {
@@ -365,17 +359,18 @@ header div .carrito {
   transition: 1s;
 }
 .bajos-destacados .contenedor-bajos div a:hover {
-  background-color: rgb(255, 255, 255);
-  color: black;
+  background-color: red;
+  color: white;
 }
 
 .titulo-custom {
   text-align: center;
   font-size: 45px;
   color: white;
-  background-color: black;
+  background-color: red;
   margin: 10px;
   padding: 10px;
+  border: black solid;
 }
 
 .banner-section {
@@ -427,10 +422,11 @@ header div .carrito {
 .how-section h2 {
   text-align: center;
   font-size: 35px;
-  color: white;
-  background-color: black;
+  color: rgb(0, 0, 0);
+  background-color: rgb(228, 181, 119);
   margin: 10px;
   padding: 10px;
+  border: solid black;
 }
 
 .how-container {
@@ -473,9 +469,10 @@ header div .carrito {
   text-align: center;
   font-size: 45px;
   color: rgb(255, 255, 255);
-  background-color: black;
+  background-color: red;
   margin: 10px;
   padding: 10px;
+  border: black solid;
 }
 .seccion-nosotros p {
   text-align: center;
@@ -484,15 +481,17 @@ header div .carrito {
   margin: 10px;
   padding: 10px;
   background-color: rgba(0, 0, 0, 0.421);
+  border: black solid;
 }
 
 section .titulo-sobre-nosotros {
   text-align: center;
   font-size: 35px;
-  color: white;
-  background-color: black;
+  color: rgb(0, 0, 0);
+  background-color: rgb(228, 181, 119);
   margin: 10px;
   padding: 10px;
+  border: solid black;
 }
 section .grilla-ubi {
   display: grid;
@@ -531,9 +530,10 @@ section .grilla-ubi .item iframe {
   text-align: center;
   font-size: 45px;
   color: white;
-  background-color: black;
+  background-color: red;
   margin: 10px;
   padding: 10px;
+  border: black solid;
 }
 
 .grid-accesorios {
@@ -548,7 +548,7 @@ section .grilla-ubi .item iframe {
 .grid-item {
   border: solid;
   margin: 20px;
-  background-image: url("../imagenes/card-fondo.jpg");
+  background-color: rgba(0, 0, 0, 0.421);
   transition: 1s;
 }
 .grid-item:hover {
@@ -595,6 +595,10 @@ section .grilla-ubi .item iframe {
   background-color: rgba(0, 0, 0, 0.648);
   padding: 10px;
 }
+.grid-item h3:hover {
+  background-color: red;
+  color: white;
+}
 
 /***fuentes**/
 * {
@@ -604,13 +608,7 @@ section .grilla-ubi .item iframe {
 }
 
 body {
-  background-image: url("../imagenes/fondo.jpg");
-  background-size: cover;
-  /* imagen como fondo */
-  background-repeat: no-repeat;
-  /* no se repite la imagen */
-  background-position: center;
-  /* centra la imagen */
+  background-color: white;
 }
 
 h1 {

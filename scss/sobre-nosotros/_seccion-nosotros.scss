@@ -3,9 +3,10 @@
     text-align: center;
     font-size: 45px;
     color: rgb(255, 255, 255);
-    background-color: black;
+    background-color: red;
     margin: 10px;
     padding: 10px;
+    border: black solid;
   }
 
   p {
@@ -15,6 +16,7 @@
     margin: 10px;
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.421);
+    border: black solid;
   }
 
 }
