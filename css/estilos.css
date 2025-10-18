@@ -526,6 +526,16 @@ section .grilla-ubi .item iframe {
   }
 }
 
+.titutlo-contacto {
+  text-align: center;
+  font-size: 35px;
+  color: rgb(0, 0, 0);
+  background-color: rgb(228, 181, 119);
+  margin: 10px;
+  padding: 10px;
+  border: solid black;
+}
+
 .titulo-accesorios {
   text-align: center;
   font-size: 45px;
@@ -811,8 +821,6 @@ a {
 /*mostrar mas imagen en how*/
 /*los carruseles cambian el color de letra por igual*/
 /*media query carrusel custom 760 no muestra textos*/
-/*agregar h2 accecsorios*/
-/*estilos para h2 en generales?*/
 /*grilla luthier usados p dentro del item*/
 /*achicar carrussel sin romper responsive*/
 /*logo fender responsive*/
@@ -827,6 +835,7 @@ a {
 /*SEO sitemaps xml, robots.txt*/
 /*palabras clave google keywords planner*/
 /*meta descripcion*/
-/*Contacto en sobre nosotros*/
+/*fuente para titutlo fuente para texto*/
+/*coherencia tipografica y de espaciado (margin, padding) para que el contenido respire y mantenga equilibrio visual*/
 
 /*# sourceMappingURL=estilos.css.map */
