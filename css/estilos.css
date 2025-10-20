@@ -250,9 +250,8 @@ header div .carrito {
   font-size: 45px;
   color: white;
   background-color: red;
-  margin: 10px auto; /*el auto lo centra*/
+  margin: 10px; /*el auto lo centra*/
   padding: 10px;
-  width: fit-content;
   border: black solid;
 }
 .guitarras-destacados h2 {
@@ -837,5 +836,6 @@ a {
 /*meta descripcion*/
 /*fuente para titutlo fuente para texto*/
 /*coherencia tipografica y de espaciado (margin, padding) para que el contenido respire y mantenga equilibrio visual*/
+/*nesting*/
 
 /*# sourceMappingURL=estilos.css.map */
