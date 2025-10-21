@@ -46,21 +46,21 @@
 
 header .bg-body-tertiary {
   background-color: rgb(228, 181, 119) !important;
-  /*letras en negro*/
   color: black !important;
   font-weight: 600;
 }
-header .nav-link:hover {
+header .bg-body-tertiary .nav-link:hover {
   color: white !important;
   transition: 0.5s;
 }
+header .bg-body-tertiary .nav-link.active {
+  color: red !important;
+}
 header div .logo {
   width: 70px;
-  /* ajustá el tamaño del logo*/
   height: auto;
 }
 header div .carrito {
-  /*ajusta el tamaño del carrito*/
   width: 30px;
   height: auto;
   cursor: pointer;
