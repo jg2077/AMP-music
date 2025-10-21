@@ -20,8 +20,13 @@ html h1 titulo-custom no esta dentro de la seccion porque estira la imagen ojo m
 
 margin top en accesorios grid item
 
+etiquetas ARIA
+
 coherencia tipografica y de espaciado (margin, padding) para que el contenido respire y mantenga equilibrio visual
 
-nesting
+carruseles con color de leta diferente
+carrusel con flechas negras
 
-etiquetas ARIA
+Arreglar vista previa del logo
+
+nesting
