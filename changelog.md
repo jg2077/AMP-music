@@ -22,11 +22,9 @@ margin top en accesorios grid item
 
 etiquetas ARIA
 
-coherencia tipografica y de espaciado (margin, padding) para que el contenido respire y mantenga equilibrio visual
-
-carruseles con color de leta diferente
+carruseles con color de letra diferente
 carrusel con flechas negras
 
 Arreglar vista previa del logo
 
-nesting
+coherencia tipografica y de espaciado (margin, padding) para que el contenido respire y mantenga equilibrio visual
