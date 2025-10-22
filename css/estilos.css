@@ -66,9 +66,8 @@ header div .carrito {
   cursor: pointer;
 }
 
-.ofertas-destacados .contenedor-ofertas div {
+.ofertas-destacados .contenedor-ofertas > div {
   border: solid;
-  /* borde rojo*/
   width: 300px;
   height: 325px;
   margin: 15px;
@@ -76,15 +75,23 @@ header div .carrito {
   background-color: white;
   transition: 1s;
 }
-
-.ofertas-destacados .contenedor-ofertas div:hover {
+.ofertas-destacados .contenedor-ofertas > div:hover {
   transform: scale(1.1);
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 }
-
-.titulo-principal {
+.ofertas-destacados .contenedor-ofertas div img {
+  width: 250px;
+  height: 250px;
+  margin-top: 5px;
+  object-fit: contain;
+}
+.ofertas-destacados .contenedor-ofertas div a:hover {
+  background-color: rgb(255, 0, 0);
+  color: rgb(255, 255, 255);
+}
+.ofertas-destacados .titulo-principal {
   text-align: center;
   font-size: 45px;
   color: white;
@@ -93,28 +100,14 @@ header div .carrito {
   padding: 10px;
   border: black solid;
 }
-
 .ofertas-destacados h3 {
   margin: 5px;
   color: rgb(255, 255, 255);
   font-size: 20px;
 }
 
-.ofertas-destacados div img {
-  width: 250px;
-  height: 250px;
-  margin-top: 5px;
-  object-fit: contain;
-  /* ajusta el tamaño */
-}
-
-.ofertas-destacados div a:hover {
-  background-color: rgb(255, 0, 0);
-  color: rgb(255, 255, 255);
-  /*cambia el color del boton al pasar el mouse*/
-}
-
-.titulo-rosa {
+/* Encapsulado por sección para claridad */
+section .titulo-rosa {
   text-align: center;
   font-size: 35px;
   color: rgb(255, 255, 255);
@@ -123,46 +116,38 @@ header div .carrito {
   padding: 10px;
   border: black solid;
 }
-
-.pink-background {
+section {
+  /* Si prefieres renombrar: .carousel--pink en lugar de .pink-background */
+}
+section .pink-background {
   background-color: rgba(255, 0, 208, 0.537);
 }
-
-.carousel-inner h5 {
+section {
+  /* Bootstrap carousel - mantengo la estructura base y anido modificaciones */
+}
+section .carousel-inner {
+  /* Para títulos y párrafos dentro del carousel */
+}
+section .carousel-inner h5 {
   color: rgb(255, 255, 255) !important;
 }
-
-.carousel-inner p {
+section .carousel-inner p {
   color: rgb(255, 255, 255) !important;
 }
-
-.carousel-caption {
+section .carousel {
+  /* caption como componente anidado */
+}
+section .carousel .carousel-caption {
   position: absolute;
   bottom: 20px;
-  /* distancia desde el borde inferior */
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
   width: 100%;
   color: white;
-  /*texto visible sobre la imagen */
   background-color: rgba(0, 0, 0, 0.232);
-  /*fondo semitransparente*/
   padding: 10px;
   border-radius: 5px;
-}
-
-.usados-luthier-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  /* 2 columnas, de 1fr. 2 columnas iguales */
-  justify-items: center;
-  /* centra los contenidos en la celda */
-  align-items: center;
-  margin-top: 20px;
-  gap: 20px;
-  /*espacio entre los elementos*/
-  padding: 20px;
 }
 
 .usados-luthier-padre h3 {
@@ -174,8 +159,23 @@ header div .carrito {
   padding: 10px;
   border: black solid;
 }
-
-.usados-luthier-padre p {
+.usados-luthier-padre .usados-luthier-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 20px;
+  padding: 20px;
+}
+.usados-luthier-padre .usados-luthier-container .usados,
+.usados-luthier-padre .usados-luthier-container .luthier {
+  border-radius: 10px;
+  text-align: center;
+  width: 100%;
+}
+.usados-luthier-padre .usados-luthier-container .usados p,
+.usados-luthier-padre .usados-luthier-container .luthier p {
   text-align: center;
   font-size: 30px;
   color: rgb(255, 255, 255);
@@ -183,20 +183,8 @@ header div .carrito {
   padding: 10px;
   background-color: rgba(0, 0, 0, 0.421);
 }
-
-.usados,
-.luthier {
-  /*background: #f5f5f5; /* opcional, para ver las cajas */
-  /*padding: 15px;*/
-  border-radius: 10px;
-  /* esquinas redondeadas */
-  text-align: center;
-  /* centra el texto e imagen */
-  width: 100%;
-}
-
-.usados-item,
-.luthier-item {
+.usados-luthier-padre .usados-luthier-container .usados img,
+.usados-luthier-padre .usados-luthier-container .luthier img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -205,44 +193,40 @@ header div .carrito {
 }
 
 .novedades-section {
-  /*background-color: white;*/
   background-image: url("../imagenes/home/novedades-fondo.jpg");
   background-size: cover;
-  /* imagen como fondo */
   background-repeat: no-repeat;
-  /* no se repite la imagen */
   background-position: center;
-  /* centra la imagen */
 }
-
-.novedades-padre {
+.novedades-section .novedades-padre {
   display: flex;
   flex-direction: column;
-  /*para que los elementos se muestren en una sola columna*/
   align-items: center;
-  /*centra los elementos*/
   border: 2px rgb(0, 0, 0) solid;
-  /*borde rojo*/
 }
-
-.novedades-section h1 {
+.novedades-section .novedades-padre > div {
+  /* bloque interno que contiene título, imagen y párrafo */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.novedades-section .novedades-padre .novedades_titulo {
   text-align: center;
   color: rgb(255, 255, 255);
 }
-
-.novedades-section p {
-  text-align: center;
-  font-size: 20px;
-  color: rgb(255, 255, 255);
-}
-
-.novedades-img {
+.novedades-section .novedades-padre .novedades-img {
   width: 100%;
   height: 67%;
   display: block;
   margin: 0 auto;
   max-height: 215px;
   cursor: pointer;
+  object-fit: contain;
+}
+.novedades-section .novedades-padre p {
+  text-align: center;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
 }
 
 .guitarras-destacados .titulo-gb {
@@ -375,32 +359,28 @@ header div .carrito {
 .banner-section {
   background-image: url("../imagenes/custom/shop.png");
   background-size: cover;
-  /* imagen como fondo */
   background-repeat: no-repeat;
-  /* no se repite la imagen */
   background-position: center;
-  /* centra la imagen */
 }
-
-.banner-padre {
+.banner-section .banner-padre {
   display: flex;
   flex-direction: column;
-  /*para que los elementos se muestren en una sola columna*/
   align-items: center;
-  /*centra los elementos*/
   border: 2px rgb(0, 0, 0) solid;
-  /*borde rojo*/
 }
-
-.banner-section h2 {
+.banner-section .banner-padre > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.banner-section .banner-padre h2.banner-titulo {
   text-align: center;
   color: rgb(255, 255, 255);
   padding: 10px;
   margin: 10px;
   background-color: rgba(0, 0, 0, 0.467);
 }
-
-.banner-section p {
+.banner-section .banner-padre p {
   text-align: center;
   font-size: 20px;
   color: rgb(255, 255, 255);
@@ -408,14 +388,14 @@ header div .carrito {
   margin: 10px;
   background-color: rgba(0, 0, 0, 0.488);
 }
-
-.banner-img {
+.banner-section .banner-padre .banner-img {
   width: 100%;
   height: 67%;
   display: block;
   margin: 0 auto;
   max-height: 215px;
   cursor: pointer;
+  object-fit: contain;
 }
 
 .how-section h2 {
@@ -427,23 +407,17 @@ header div .carrito {
   padding: 10px;
   border: solid black;
 }
-
-.how-container {
+.how-section .how-container {
   background-image: url("../imagenes/custom/how.jpg");
   background-size: cover;
-  /* imagen como fondo */
   background-repeat: no-repeat;
-  /* no se repite la imagen */
   background-position: center;
-  /* centra la imagen */
   margin-bottom: 10px;
 }
-
-.how-steps {
+.how-section .how-container .how-steps {
   width: 100%;
 }
-
-.how-container p {
+.how-section .how-container .how-steps p {
   text-align: center;
   font-size: 20px;
   color: rgb(255, 255, 255);
@@ -553,60 +527,44 @@ section .grilla-ubi .item iframe {
   gap: 10px;
   cursor: pointer;
 }
-
-.grid-item {
+.grid-accesorios .grid-item {
   border: solid;
   margin: 20px;
   background-color: rgba(0, 0, 0, 0.421);
   transition: 1s;
+  position: relative;
 }
-.grid-item:hover {
+.grid-accesorios .grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  cursor: pointer;
+}
+.grid-accesorios .grid-item:hover {
   transform: scale(1.1);
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 }
-
-.grid-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  /* ajusta el tamaño de la imagen */
-  cursor: pointer;
-}
-
-.img4 {
-  grid-column: span 2;
-  /* ocupa 2 columnas */
-}
-
-.img6 {
-  grid-row: span 2;
-  /* ocupa 2 columnas */
-}
-
-.img8 {
-  grid-row: span 2;
-  /* ocupa 2 columnas */
-}
-
-.grid-item {
-  position: relative;
-  /*un elemento absoluto no puede salir*/
-}
-
-.grid-item h3 {
+.grid-accesorios .grid-item h3 {
   position: absolute;
-  /*posiciona el elemento respecto a su contenedor*/
   bottom: 0;
-  /*lo posiciona abajo*/
   color: rgb(255, 255, 255);
   background-color: rgba(0, 0, 0, 0.648);
   padding: 10px;
 }
-.grid-item h3:hover {
+.grid-accesorios .grid-item h3:hover {
   background-color: red;
   color: white;
+}
+.grid-accesorios .img4 {
+  grid-column: span 2;
+}
+.grid-accesorios .img6 {
+  grid-row: span 2;
+}
+.grid-accesorios .img8 {
+  grid-row: span 2;
 }
 
 /***fuentes**/
@@ -816,23 +774,5 @@ a {
     font-size: 28px;
   }
 }
-/*rompe how entre 1000 y 800*/
-/*mostrar mas imagen en how*/
-/*los carruseles cambian el color de letra por igual*/
-/*media query carrusel custom 760 no muestra textos*/
-/*grilla luthier usados p dentro del item*/
-/*achicar carrussel sin romper responsive*/
-/*logo fender responsive*/
-/*aspect ratio en la imagen custom banner*/
-/*margin top banner custom*/
-/*arreglar margins en custom shop*/
-/*arreglar how container*/
-/*Como hago para que un padding no ocupe todo el ancho y solo los bordes*/
-/*en estilos.scss pasar de @import a @use?*/
-/*html h1 titulo-custom no esta dentro de la seccion porque estira la imagen ojo media query h1*/
-/*margin top en accesorios grid item*/
-/*coherencia tipografica y de espaciado (margin, padding) para que el contenido respire y mantenga equilibrio visual*/
-/*nesting*/
-/* etiquetas ARIA*/
 
 /*# sourceMappingURL=estilos.css.map */
