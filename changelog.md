@@ -1,30 +1,3 @@
-rompe how entre 1000 y 800
-mostrar mas imagen en how
+modo oscuro
 
-los carruseles cambian el color de letra por igual
-media query carrusel custom 760 no muestra textos
-
-grilla luthier usados p dentro del item
-achicar carrussel sin romper responsive
-
-logo fender responsive
-
-aspect ratio en la imagen custom banner
-margin top banner custom
-arreglar margins en custom shop
-arreglar how container
-Como hago para que un padding no ocupe todo el ancho y solo los bordes
-en estilos.scss pasar de @import a @use?
-
-html h1 titulo-custom no esta dentro de la seccion porque estira la imagen ojo media query h1
-
-margin top en accesorios grid item
-
-etiquetas ARIA
-
-carruseles con color de letra diferente
-carrusel con flechas negras
-
-Arreglar vista previa del logo
-
-coherencia tipografica y de espaciado (margin, padding) para que el contenido respire y mantenga equilibrio visual
+cambio de idioma
